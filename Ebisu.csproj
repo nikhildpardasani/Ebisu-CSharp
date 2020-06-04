@@ -10,11 +10,15 @@
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove="Gamma_test.json" />
+    <None Remove="Gamma\Gamma_test.json" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Gamma_test.json">
+    <Content Include="Gamma\Gamma_test.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Gamma\" />
+    <Folder Include="MinimizeGolden\" />
   </ItemGroup>
 </Project>

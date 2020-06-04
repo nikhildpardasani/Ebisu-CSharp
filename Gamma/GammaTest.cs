@@ -4,7 +4,7 @@ using System.Reflection;
 using Newtonsoft.Json;
 using NUnit.Framework;
 
-namespace Ebisu
+namespace Ebisu.Gamma
 {
     public class GammaTest
     {
@@ -19,7 +19,7 @@ namespace Ebisu
         [Test]
         public static void LoadAndCompare()
         {
-            string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Gamma_test.json");
+            string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Gamma/Gamma_test.json");
             string[] testData = File.ReadAllLines(path);
             double[][] expected = (double[][])JsonConvert.DeserializeObject(testData[0],typeof(double[][]));
 

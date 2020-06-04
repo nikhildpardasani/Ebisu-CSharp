@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Ebisu
+namespace Ebisu.Gamma
 {
     public class Gamma
     {
