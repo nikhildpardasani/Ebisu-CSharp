@@ -6,7 +6,11 @@ namespace Ebisu
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Starting Tests for Gamma");
+            GammaTest.LoadAndCompare();
+            Console.WriteLine("Tests for Gamma Successful!!!");
+
+
         }
     }
 }
