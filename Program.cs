@@ -8,10 +8,14 @@ namespace Ebisu
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Starting Tests for Gamma");
-            GammaTest.LoadAndCompare();
-            Console.WriteLine("Tests for Gamma Successful!!!");
+            
+            Console.WriteLine("========== Starting Tests for Gamma ==========");
 
+            GammaTest.LoadAndCompare();
+
+            Console.WriteLine("========== Tests for Gamma Successful!!! ==========\n");
+
+            Console.WriteLine("========== Starting Tests for Minimize Golden ==========");
             MinTest minTest = new MinTest();
             minTest.Basic();
             Console.WriteLine("Test for min Basic Successful!!!");
@@ -51,6 +55,31 @@ namespace Ebisu
 
             minTest.Cusp();
             Console.WriteLine("Test for min Cusp Successful!!!");
+
+            Console.WriteLine("========== Tests for Minimize Golden Successful!!! ==========\n");
+
+            Console.WriteLine("========== Starting Tests for Ebisu 2.0 ==========");
+
+            EbisuTest ebisuTest = new EbisuTest();
+
+            ebisuTest.TestAgainstReference();
+            Console.WriteLine("Test for Ebisu TestAgainstReference Successful!!!");
+
+            ebisuTest.TestHalflife();
+            Console.WriteLine("Test for Ebisu TestHalflife Successful!!!");
+
+            ebisuTest.Predict();
+            Console.WriteLine("Test for Ebisu Predict Successful!!!");
+
+            ebisuTest.Update();
+            Console.WriteLine("Test for Ebisu Update Successful!!!");
+
+            ebisuTest.CheckLogSumExp();
+            Console.WriteLine("Test for Ebisu CheckLogSumExp Successful!!!");
+
+
+            Console.WriteLine("========== Tests for Ebisu 2.0 Successful!!! ==========\n");
+
         }
     }
 }

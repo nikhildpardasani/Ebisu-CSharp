@@ -18,10 +18,6 @@ namespace Ebisu.Gamma
         private static double log2π = Math.Log(2 * Math.PI);
         private static double sqrt2π = Math.Sqrt(2 * Math.PI);
 
-        public Gamma()
-        {
-        }
-
         public static double gammaln(double z)
         {
             if (z < 0) { return Double.NaN; }

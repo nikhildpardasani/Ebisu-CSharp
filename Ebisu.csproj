@@ -11,14 +11,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Gamma\Gamma_test.json" />
+    <None Remove="Ebisu\Ebisu_test.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Gamma\Gamma_test.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ebisu\Ebisu_test.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Gamma\" />
     <Folder Include="MinimizeGolden\" />
+    <Folder Include="Ebisu\" />
   </ItemGroup>
 </Project>
